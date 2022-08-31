@@ -18,16 +18,19 @@ body {
 }
 
 .display {
+    max-width: 270px;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
     background-color: white;
     border-radius: 10px;
-    min-height: 32px;
+    min-height: 85px;
     font-size: 20px;
-    padding-block: 20px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .calculator-container {
-
     border-radius: 10px;
     background-color: rgb(205, 205, 205);
     padding: 20px;
@@ -35,7 +38,7 @@ body {
     margin-top: 100px;
 }
 
-.digits{
+.buttons{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -54,4 +57,19 @@ button {
 .clear,.delete {
     font-size: 20px;
     grid-column: span 2;
+}
+
+.display-old {
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.display-current {
+    margin-right: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 30px;
 }
